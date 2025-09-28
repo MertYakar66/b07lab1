@@ -2,7 +2,7 @@
 public class Driver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Polynomial p = new Polynomial();
 		System.out.println(p.evaluate(3));
 		double [] c1 = {6,0,0,5};
