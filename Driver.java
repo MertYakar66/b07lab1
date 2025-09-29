@@ -48,12 +48,12 @@ public class Driver {
 			p.saveToFile(filename);
 			System.out.println("Saved p(x) to the file '" + filename + "'");
 			
-			// Now, we'll try to create a new polynomial by reading that same file.
+			// Now, we'll create a new polynomial by reading that same file.
 			File inputFile = new File(filename);
 			Polynomial pFromFile = new Polynomial(inputFile);
 			System.out.println("Loaded from file: " + pFromFile);
 			
-			// Just to be sure, let's check if the one we loaded is identical to the one we saved.
+			// Checking if the one we loaded is identical to the one we saved.
 			System.out.println("Does loaded polynomial match original? " + p.toString().equals(pFromFile.toString()));
 
 		} catch (FileNotFoundException e) {
